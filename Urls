@@ -8,3 +8,9 @@ R:\REEResults\26Aug2019\HCM\21571026\313554639_1\Session1\BasicReport.htm
 
 
 ADFCommandImageLink[@absoluteLocator='.*\:SPdonei' or @absoluteLocator='.*\:UPMctb1']
+
+if (dataMap.containsKey("LearningItemName")) {
+			ADFInputComboboxListOfValues combobox=adf.inputComboboxListOfValues(33, "{{obj.l2.verifyAssignmentProgress_ADFInputComboboxListOfValues_LearningItem}}");
+			utils_adf.waitForServer(combobox);			
+			utils_adf.enterValueinComboBox(combobox, dataMap.get("LearningItemName").toString().trim(), "Name", "Name");
+		}
