@@ -5,3 +5,6 @@ abc
 changeslatest
 
 R:\REEResults\26Aug2019\HCM\21571026\313554639_1\Session1\BasicReport.htm
+
+
+ADFCommandImageLink[@absoluteLocator='.*\:SPdonei' or @absoluteLocator='.*\:UPMctb1']
